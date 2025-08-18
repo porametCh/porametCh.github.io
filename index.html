@@ -6,13 +6,14 @@
     <title>Portfolio Poramet</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <script>AOS.init();</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <style>
         /* กำหนด font หลักให้สวยงาม */
         body {
@@ -47,8 +48,8 @@
                 <div class="hidden md:flex space-x-6 items-center">
                     <a href="#home" class="text-gray-600 hover:text-indigo-600 transition duration-300">หน้าแรก</a>
                     <a href="#about" class="text-gray-600 hover:text-indigo-600 transition duration-300">เกี่ยวกับฉัน</a>
-                    <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition duration-300">ผลงาน</a>
                     <a href="#skills" class="text-gray-600 hover:text-indigo-600 transition duration-300">skills</a>
+                    <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition duration-300">ผลงาน</a>
                     <a href="#activities" class="text-gray-600 hover:text-indigo-600 transition duration-300">กิจกรรม</a>
                     <a href="#contact" class="bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition duration-300 shadow">ติดต่อ</a>
                 </div>
@@ -59,10 +60,10 @@
         </div>
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
             <a href="#home" class="block py-2 text-gray-600 hover:text-indigo-600">หน้าแรก</a>
-            <a href="#about" class="block py-2 text-gray-600 hover:text-indigo-600">เกี่ยวกับฉัน</a>
-            <a href="#projects" class="block py-2 text-gray-600 hover:text-indigo-600">ผลงาน</a>
+            <a href="#about" class="block py-2 text-gray-600 hover:text-indigo-600">About Me</a>
             <a href="#skills" class="block py-2 text-gray-600 hover:text-indigo-600">skills</a>
-            <a href="#activities" class="block py-2 text-gray-600 hover:text-indigo-600">กิจกรรม</a>
+            <a href="#projects" class="block py-2 text-gray-600 hover:text-indigo-600">My work</a>
+            <a href="#activities" class="block py-2 text-gray-600 hover:text-indigo-600">Activities</a>
             <a href="#contact" class="block mt-2 bg-indigo-600 text-white text-center px-4 py-2 rounded-full hover:bg-indigo-700">ติดต่อ</a>
         </div>
     </nav>
@@ -74,7 +75,7 @@
                     <h1 class="text-4xl md:text-6xl font-bold text-gray-800 leading-tight mb-4">
                         <span id="typing-text" class="typing-effect"></span><span class="text-indigo-600">PORAMET </span>
                     </h1>
-                    <p class="text-xl text-gray-600 mb-8">Full Stack Designer</p>
+                    <p class="text-xl text-gray-600 mb-8">Computer Engineering</p>
                     <div class="flex justify-center md:justify-start space-x-4">
                         <a href="#projects" class="bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-indigo-700 transition duration-300 shadow-lg">ผลงานของฉัน</a>
                     </div>
@@ -98,56 +99,7 @@
         </div>
     </section>
 
-    <section id="projects" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-4">ผลงานที่ผ่านมา</h2>
-            <div class="w-20 h-1 bg-indigo-600 mx-auto mb-12"></div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover">
-                    <img src="https://placehold.co/600x400/E0E7FF/4338CA?text=Project+1" alt="ภาพโปรเจกต์ 1" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Gon Ai</h3>
-                        <p class="text-gray-600 mb-4">Chatbot Ai ที่ใช้ Line OA เป็นผู้ช่วยในการให้คำแนะนำของร้านอาหารไม่ว่าจะเป็นโปรโมชั่น ราคา สถานที่ตั้ง และ คำถามอื่น ๆ ที่เกี่ยวข้องกับร้านอาหาร</p>
-                        <a href="#" class="text-indigo-600 hover:underline font-semibold">ดูเพิ่มเติม &rarr;</a>
-                    </div>
-                </div>
-                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover">
-                    <img src="https://img2.pic.in.th/pic/Screenshot-2025-06-27-211011.png" alt="ภาพโปรเจกต์ 2" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">HealthyTeen (Figma)</h3>
-                        <p class="text-gray-600 mb-4">ออกแบบแอพพลิเคชั่นด้วย figma เป็นแอพสำหรับเช็คสุขภาพของวัยรุ่น เน้นการตกแต่งให้ดูสบายตา น่าใช้งาน</p>
-                        <a href="#" class="text-indigo-600 hover:underline font-semibold">ดูเพิ่มเติม &rarr;</a>
-                    </div>
-                </div>
-                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover">
-                    <img src="https://placehold.co/600x400/A5B4FC/6366F1?text=Project+3" alt="ภาพโปรเจกต์ 3" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">NSC Thailand Southern Region</h3>
-                        <p class="text-gray-600 mb-4">(webpage mockup) เป็นเว็บไซต์จำลองของการแข่งขัน NSC ภาคใต้ ที่มีเมนูและฟังก์ชั่นต่าง ๆ ของการแข่งขัน โดยจะเน้นไปที่การแข่งขันของภาคใต้</p>
-                        <a href="#" class="text-indigo-600 hover:underline font-semibold">ดูเพิ่มเติม &rarr;</a>
-                    </div>
-                </div>
-                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover">
-                    <img src="https://placehold.co/600x400/A5B4FC/6366F1?text=Project+4" alt="ภาพโปรเจกต์ 3" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">2048 Game</h3>
-                        <p class="text-gray-600 mb-4">Web Game สำหรับเล่นคลายเครียด เป็นการเลื่อนไทร์ไปมาจนกว่าจะครบจำนวน 2048</p>
-                        <a href="#" class="text-indigo-600 hover:underline font-semibold">ดูเพิ่มเติม &rarr;</a>
-                    </div>
-                </div>
-                 <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover">
-                    <img src="https://img5.pic.in.th/file/secure-sv1/coop-presentation-final-6410110306.png" alt="ภาพโปรเจกต์ 3" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Resouce Booking System</h3>
-                        <p class="text-gray-600 mb-4">เว็บไซต์สำหรับจองห้องประชุม อุปกรณ์สำนักงาน เพื่อแก้ไขปัญหาการจองซ้ำซ้อน ลดเวลา สามารถเข้าถึงได้ทุกที่</p>
-                        <a href="#" class="text-indigo-600 hover:underline font-semibold">ดูเพิ่มเติม &rarr;</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="py-20">
+    <section id="skills" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-4">skills</h2>
             <div class="w-20 h-1 bg-indigo-600 mx-auto mb-12"></div>
@@ -195,36 +147,186 @@
                 <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md w-28 h-28 justify-center transition-transform hover:scale-110">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Arduino_Logo.svg" class="h-12 w-12" />
                     <p class="mt-2 text-sm font-medium">Arduino IDE</p>
-                </div>
-
-
+                </div>   
+    
     </section>
-    <section id="activities" class="py-20 bg-white">
-    <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-4">กิจกรรมและประสบการณ์</h2>
-        <div class="w-20 h-1 bg-indigo-600 mx-auto mb-12"></div>
+    <section id="language" class="py-5 bg-white">
+            <div>
+                <h2 class="text-3xl font-bold text-center mb-4">language</h2>
+            <div class="w-10 h-1 bg-indigo-600 mx-auto mb-12"></div>
+            <div class="max-w-4xl mx-auto flex flex-wrap justify-center gap-6 md:gap-8">
+                <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md w-28 h-28 justify-center transition-transform hover:scale-110">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/english/english-original.svg" class="h-12 w-12" />
+                    <p class="mt-2 text-sm font-medium">English</p>
+                </div>
+                <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md w-28 h-28 justify-center transition-transform hover:scale-110">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/thai/thai-original.svg" class="h-12 w-12" />
+                    <p class="mt-2 text-sm font-medium">Thai</p>
+                </div>
+            </div> 
+    </section>
 
-        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-10 mt-12 place-items-center">
-        <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover max-w-l  mx-auto">
-        <img src="image\haier.jpg" alt="Haier" class="w-full h-56 object-cover">
-        <div class="p-6">
-            <h3 class="font-bold text-xl mb-2 text-indigo-700">สหกิจศึกษา : บริษัท ไฮเออร์ อีเล็คทริค (ประเทศไทย) จำกัด (มหาชน)</h3>
-            <p class="text-gray-700 font-semibold mb-2">ตำแหน่ง: Front End Deverloper</p>
-            <p class="text-gray-600 text-sm mb-4">ระยะเวลา: มิถุนายน 2568 - ตุลาคม 2568</p>
-            <ul class="list-disc list-inside text-gray-600 mb-4 space-y-1">
-                <li>พัฒนาและปรับปรุงฟังก์ชันการทำงานของระบบจัดการภายในองค์กรตามผู้ใช้งาน โดยใช้ React และ Node.js</li>
-                <li>ออกแบบและสร้าง UI/UX ใหม่เพื่อเพิ่มประสิทธิภาพการใช้งาน</li>
-                <li>ทำงานร่วมกับทีมพัฒนาเพื่อแก้ไขข้อผิดพลาดและปรับปรุงประสิทธิภาพของโค้ด</li>
-            </ul>
+    <section id="projects" class="py-20 bg-gray-50">
+        <div  class="container mx-auto px-2">
+            <h2 class="text-3xl font-bold text-center mb-4">My work</h2>
+            <div class="w-20 h-1 bg-indigo-600 mx-auto mb-12"></div>
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10">
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="https://placehold.co/600x400/A5B4FC/6366F1?text=Project+1" alt="ภาพโปรเจกต์ 1" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Gon Ai</h3>
+                        <p class="text-gray-600 mb-4">An AI chatbot on a LINE Official Account (LINE OA) acts as an assistant to provide 
+                            restaurant recommendations, including promotions, pricing, location, and other related inquiries.</p>
+                        <h4 class="font-medium text-l mb-2">deverlopment : LineOA + Python + Ollama language Models</h4>
+                        
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="https://img2.pic.in.th/pic/Screenshot-2025-06-27-211011.png" alt="ภาพโปรเจกต์ 2" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">HealthyTeen (Figma)</h3>
+                        <p class="text-gray-600 mb-4">Design a health check application for teenagers using Figma, focusing on a 
+                            comfortable and user-friendly visual style.</p>
+                        <h4 class="font-medium text-l mb-2">deverlopment : Figma</h4>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="https://placehold.co/600x400/A5B4FC/6366F1?text=Project+3" alt="ภาพโปรเจกต์ 3" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">NSC Thailand Southern Region Website</h3>
+                        <p class="text-gray-600 mb-4">A webpage mockup for the NSC Southern Region competition, featuring various menus and functions with a focus on the southern event</p>
+                        <h4 class="font-medium text-l mb-2">deverlopment : React</h4>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="https://placehold.co/600x400/A5B4FC/6366F1?text=Project+4" alt="ภาพโปรเจกต์ 3" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">2048 Game</h3>
+                        <p class="text-gray-600 mb-4">A relaxing web game where you slide tiles around a board to merge them, with the goal of creating a 2048 tile.</p>
+                        <h4 class="font-medium text-l mb-2">deverlopment : Next.js</h4>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="https://img5.pic.in.th/file/secure-sv1/coop-presentation-final-6410110306.png" alt="ภาพโปรเจกต์ 3" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Resouce Booking System</h3>
+                        <p class="text-gray-600 mb-4">A web-based booking system for meeting rooms and office equipment. It helps to prevent duplicate bookings, 
+                            reduce time spent on scheduling, and provides universal access.</p>
+                        <p>
+                            <h4 class="font-medium text-l mb-2">deverlopment : React + Firebase</h4>
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="https://placehold.co/600x400/A5B4FC/6366F1?text=Project+6" alt="ภาพโปรเจกต์ 3" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Smart Pikky Bank</h3>
+                        <p class="text-gray-600 mb-4">โปรเจค IOT</p>
+                        <p>
+                            <h4 class="font-medium text-l mb-2">deverlopment : Arduino IDE + Arduino board + sensor</h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+    </section>
+
+   
+    <section id="activities" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">กิจกรรมและประสบการณ์</h2>
+        <div class="w-20 h-1 bg-indigo-600 mx-auto mb-12"></div>
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 mt-12 place-items-center">
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover max-w-l  mx-auto">
+                    <img src="image\haier.jpg" alt="Haier" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-indigo-700">สหกิจศึกษา : บริษัท ไฮเออร์ อีเล็คทริค (ประเทศไทย) จำกัด (มหาชน)</h3>
+                        <p class="text-gray-700 font-semibold mb-2">ตำแหน่ง: FrontEnd Deverloper</p>
+                        <p class="text-gray-600 text-sm mb-4">ระยะเวลา: มิถุนายน 2568 - ตุลาคม 2568</p>
+                        <ul class="list-disc list-inside text-gray-600 mb-4 space-y-1">
+                            <li>พัฒนาและปรับปรุงฟังก์ชันการทำงานของระบบจัดการภายในองค์กรตามผู้ใช้งาน โดยใช้ Framework Frontend ต่าง ๆ </li>
+                            <li>ออกแบบและสร้าง UI/UX ใหม่เพื่อเพิ่มประสิทธิภาพการใช้งาน</li>
+                            <li>ทำงานร่วมกับทีมพัฒนาเพื่อแก้ไขข้อผิดพลาดและปรับปรุงประสิทธิภาพของโค้ด</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover max-w-l  mx-auto">
+                    <img src="image\haier.jpg" alt="Haier" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-indigo-700">สหกิจศึกษา : บริษัท ไฮเออร์ อีเล็คทริค (ประเทศไทย) จำกัด (มหาชน)</h3>
+                        <p class="text-gray-700 font-semibold mb-2">ตำแหน่ง: FrontEnd Deverloper</p>
+                        <p class="text-gray-600 text-sm mb-4">ระยะเวลา: มิถุนายน 2568 - ตุลาคม 2568</p>
+                        <ul class="list-disc list-inside text-gray-600 mb-4 space-y-1">
+                            <li>พัฒนาและปรับปรุงฟังก์ชันการทำงานของระบบจัดการภายในองค์กรตามผู้ใช้งาน โดยใช้ Framework Frontend ต่าง ๆ </li>
+                            <li>ออกแบบและสร้าง UI/UX ใหม่เพื่อเพิ่มประสิทธิภาพการใช้งาน</li>
+                            <li>ทำงานร่วมกับทีมพัฒนาเพื่อแก้ไขข้อผิดพลาดและปรับปรุงประสิทธิภาพของโค้ด</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover max-w-l  mx-auto">
+                    <img src="image\haier.jpg" alt="Haier" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-indigo-700">สหกิจศึกษา : บริษัท ไฮเออร์ อีเล็คทริค (ประเทศไทย) จำกัด (มหาชน)</h3>
+                        <p class="text-gray-700 font-semibold mb-2">ตำแหน่ง: FrontEnd Deverloper</p>
+                        <p class="text-gray-600 text-sm mb-4">ระยะเวลา: มิถุนายน 2568 - ตุลาคม 2568</p>
+                        <ul class="list-disc list-inside text-gray-600 mb-4 space-y-1">
+                            <li>พัฒนาและปรับปรุงฟังก์ชันการทำงานของระบบจัดการภายในองค์กรตามผู้ใช้งาน โดยใช้ Framework Frontend ต่าง ๆ </li>
+                            <li>ออกแบบและสร้าง UI/UX ใหม่เพื่อเพิ่มประสิทธิภาพการใช้งาน</li>
+                            <li>ทำงานร่วมกับทีมพัฒนาเพื่อแก้ไขข้อผิดพลาดและปรับปรุงประสิทธิภาพของโค้ด</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover max-w-l  mx-auto">
+                    <img src="image\haier.jpg" alt="Haier" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-indigo-700">สหกิจศึกษา : บริษัท ไฮเออร์ อีเล็คทริค (ประเทศไทย) จำกัด (มหาชน)</h3>
+                        <p class="text-gray-700 font-semibold mb-2">ตำแหน่ง: FrontEnd Deverloper</p>
+                        <p class="text-gray-600 text-sm mb-4">ระยะเวลา: มิถุนายน 2568 - ตุลาคม 2568</p>
+                        <ul class="list-disc list-inside text-gray-600 mb-4 space-y-1">
+                            <li>พัฒนาและปรับปรุงฟังก์ชันการทำงานของระบบจัดการภายในองค์กรตามผู้ใช้งาน โดยใช้ Framework Frontend ต่าง ๆ </li>
+                            <li>ออกแบบและสร้าง UI/UX ใหม่เพื่อเพิ่มประสิทธิภาพการใช้งาน</li>
+                            <li>ทำงานร่วมกับทีมพัฒนาเพื่อแก้ไขข้อผิดพลาดและปรับปรุงประสิทธิภาพของโค้ด</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
       </div>
     </section>
 
+    <section id="cerfi" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-3 ">
+            <h2 class="text-3xl font-bold text-center mb-4">Certificate</h2>
+            <div class="w-20 h-1 bg-indigo-600 mx-auto mb-12"></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="https://placehold.co/600x400/A5B4FC/6366F1?text=Certificate+1" alt="ใบประกาศนียบัตร 1" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">ใบประกาศนียบัตร 1</h3>
+                        <p class="text-gray-600 mb-4">รายละเอียดเกี่ยวกับใบประกาศนียบัตร 1</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="https://placehold.co/600x400/A5B4FC/6366F1?text=Certificate+2" alt="ใบประกาศนียบัตร 2" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">ใบประกาศนียบัตร 2</h3>
+                        <p class="text-gray-600 mb-4">รายละเอียดเกี่ยวกับใบประกาศนียบัตร 2</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="https://placehold.co/600x400/A5B4FC/6366F1?text=Certificate+3" alt="ใบประกาศนียบัตร 3" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">ใบประกาศนียบัตร 3</h3>
+                        <p class="text-gray-600 mb-4">รายละเอียดเกี่ยวกับใบประกาศนียบัตร 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <section id="contact" class="py-20 bg-gray-50">
+    </section>
+
+
+    <section id="contact" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center mb-4">ติดต่อฉัน</h2>
             <div class="w-20 h-1 bg-indigo-600 mx-auto mb-12"></div>
@@ -242,9 +344,6 @@
         <div class="container mx-auto px-6 py-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <p class="text-center md:text-left mb-4 md:mb-0">&copy; 2025 Poramet Chansong. สงวนลิขสิทธิ์.</p>
-                <div class="flex space-x-4">
-                    <a href="#" class="hover:text-indigo-400 transition duration-300">GitHub</a>
-                </div>
             </div>
         </div>
     </footer>
@@ -324,5 +423,6 @@
         // Start the typing effect when the page loads
         document.addEventListener('DOMContentLoaded', type);
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
